@@ -93,6 +93,10 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
+  s.xcconfig = {
+      "GCC_PREPROCESSOR_DEFINITIONS" => '"$(inherited) ARC_ENABLED"'
+    }
+
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
