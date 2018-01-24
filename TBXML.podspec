@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = "Classes/**/*.h"
 
   s.xcconfig = {
-      "GCC_PREPROCESSOR_DEFINITIONS" => '"$(inherited) ARC_ENABLED"'
+      'GCC_PREPROCESSOR_DEFINITIONS' => '"$(inherited) ARC_ENABLED"'
     }
 
 
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
