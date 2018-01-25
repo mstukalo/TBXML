@@ -93,11 +93,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.xcconfig = {
-      'GCC_PREPROCESSOR_DEFINITIONS' => '"$(inherited) ARC_ENABLED"'
-    }
-
-
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -135,5 +130,9 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+    s.xcconfig = {
+      "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) ARC_ENABLED"
+    }
+
 
 end
